@@ -1,0 +1,22 @@
+{
+	"name": "@aviation/context",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"files": [
+		"./dist/",
+		"./src/"
+	],
+	"scripts": {
+		"build": "npx tsgo"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "7.0.0-dev.20260111.1",
+		"react": "19.2.3",
+		"react-dom": "19.2.3",
+		"typescript": "5.9.3"
+	}
+}

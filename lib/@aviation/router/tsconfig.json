@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"declaration": true,
+		"declarationMap": true,
+		"jsx": "react-jsx",
+		"module": "NodeNext",
+		"noEmit": false,
+		"outDir": "dist",
+		"rootDir": "./src/",
+		"sourceMap": true
+	},
+	"include": ["./src/**/*"],
+	"exclude": ["./**/*.test.*", "./**/*.spec.*"],
+	"extends": "../../../tsconfig.common.json"
+}

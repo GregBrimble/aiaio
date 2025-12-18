@@ -1,0 +1,47 @@
+{
+	"files": [],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		},
+		{
+			"path": "./cli/__tests__/tsconfig.json"
+		},
+		{
+			"path": "./lib/@aiaio/internal/tsconfig.json"
+		},
+		{
+			"path": "./lib/@aviation/context/tsconfig.json"
+		},
+		{
+			"path": "./lib/@aviation/context/__tests__/tsconfig.json"
+		},
+		{
+			"path": "./lib/@aviation/destinations/tsconfig.json"
+		},
+		{
+			"path": "./lib/@aviation/destinations/__tests__/tsconfig.json"
+		},
+		{
+			"path": "./lib/@aviation/router/tsconfig.json"
+		},
+		{
+			"path": "./lib/@aviation/router/__tests__/tsconfig.json"
+		},
+		{
+			"path": "./src/tsconfig.json"
+		},
+		{
+			"path": "./web/tsconfig.json"
+		},
+		{
+			"path": "./web/__tests__/tsconfig.json"
+		},
+		{
+			"path": "./worker/tsconfig.json"
+		},
+		{
+			"path": "./worker/__tests__/tsconfig.json"
+		}
+	]
+}
