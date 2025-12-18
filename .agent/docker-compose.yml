@@ -1,0 +1,11 @@
+services:
+  opencode:
+    build:
+      context: ..
+      dockerfile: ./.agent/Dockerfile
+    volumes:
+      - ${HOME}/.local/share/opencode/auth.json:/mnt/opencode-data/auth.json
+      - ${PWD}:${PWD}
+    working_dir: ${PWD}
+    ports:
+      - "4096:4096"

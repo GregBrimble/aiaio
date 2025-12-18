@@ -1,0 +1,18 @@
+@prd.json @progress.txt
+1. Find the highest-priority task and implement it. When choosing the next task, prioritize in this order:
+	a) Architectural decisions and core abstractions
+	b) Integration points between modules
+	c) Unknown unknowns and spike work
+	d) Standard features and implementation
+	e) Polish, cleanup, and quick wins
+	Fail fast on risky work. Save easy wins for later.
+2. Run 'npm run check'.
+3. Update prd.json with what was done.
+4. Append your progress to progress.txt:
+	- Task completed and PRD item reference
+	- Key decisions made and reasoning
+	- Files changed
+	- Any blockers or notes for next iteration
+	Keep entries concise. Sacrifice grammar for the sake of concision. This file helps future iterations skip exploration.
+5. Commit your changes.
+ONLY WORK ON A SINGLE TASK.

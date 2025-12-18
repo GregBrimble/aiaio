@@ -1,0 +1,31 @@
+{
+	"name": "@aviation/destinations",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./international/browser": "./dist/international/browser.js",
+		"./international/rsc": "./dist/international/rsc.js",
+		"./international/rsc-api": "./dist/international/rsc-api.js",
+		"./international/server-functions": "./dist/international/server-functions.js",
+		"./international/ssr": "./dist/international/ssr.js"
+	},
+	"files": [
+		"./dist/",
+		"./src/"
+	],
+	"scripts": {
+		"build": "npx tsgo"
+	},
+	"dependencies": {
+		"@vitejs/plugin-rsc": "0.5.19",
+		"capnweb": "https://pkg.pr.new/cloudflare/capnweb@135",
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"rsc-html-stream": "0.0.7"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "7.0.0-dev.20260212.1",
+		"typescript": "5.9.3"
+	}
+}

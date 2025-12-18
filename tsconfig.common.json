@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"checkJs": true,
+		"erasableSyntaxOnly": true,
+		"exactOptionalPropertyTypes": true,
+		"lib": ["ESNext"],
+		"module": "preserve",
+		"moduleDetection": "force",
+		"noEmit": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitOverride": true,
+		"noImplicitReturns": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"resolveJsonModule": true,
+		"rewriteRelativeImportExtensions": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"target": "esnext",
+		"verbatimModuleSyntax": true
+	}
+}

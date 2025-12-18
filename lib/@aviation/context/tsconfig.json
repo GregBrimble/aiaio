@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"declaration": true,
+		"declarationMap": true,
+		"module": "NodeNext",
+		"noEmit": false,
+		"outDir": "dist",
+		"rootDir": "./src/",
+		"sourceMap": true
+	},
+	"include": ["./src/**/*"],
+	"exclude": ["./**/*.test.*", "./**/*.spec.*"],
+	"extends": "../../../tsconfig.common.json"
+}
