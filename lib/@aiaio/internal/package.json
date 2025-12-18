@@ -1,0 +1,8 @@
+{
+	"name": "@aiaio/internal",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"effect": "3.19.14"
+	}
+}

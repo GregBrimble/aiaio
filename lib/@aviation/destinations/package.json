@@ -1,0 +1,30 @@
+{
+	"name": "@aviation/destinations",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./international/browser": "./dist/international/browser.js",
+		"./international/rsc": "./dist/international/rsc.js",
+		"./international/ssr": "./dist/international/ssr.js"
+	},
+	"files": [
+		"./dist/",
+		"./src/"
+	],
+	"scripts": {
+		"build": "npx tsgo"
+	},
+	"dependencies": {
+		"@vitejs/plugin-rsc": "0.5.11",
+		"react": "19.2.3",
+		"react-dom": "19.2.3",
+		"rsc-html-stream": "0.0.7"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "7.0.0-dev.20260111.1",
+		"react": "19.2.3",
+		"react-dom": "19.2.3",
+		"typescript": "5.9.3"
+	}
+}

@@ -1,0 +1,135 @@
+{
+	"$schema": "https://www.raycast.com/schemas/extension.json",
+	"name": "aiaio",
+	"version": "0.0.0",
+	"private": true,
+	"description": "The Raycast extension description.",
+	"type": "module",
+	"bin": "./cli/bin/index.ts",
+	"workspaces": [
+		"./lib/@aiaio/internal/",
+		"./lib/@aviation/context/",
+		"./lib/@aviation/destinations/",
+		"./lib/@aviation/router/",
+		"./raycast-extension/"
+	],
+	"scripts": {
+		"prebuild": "npm run build --workspaces --if-present",
+		"build": "concurrently \"npm:build:*\" --group",
+		"build:raycast": "ray build",
+		"build:web": "vite build",
+		"precheck": "npm run build",
+		"check": "concurrently \"npm:check:*\" \"npm:test:ci\" --group",
+		"check:format": "npm run prettier -- --check",
+		"check:lint": "npm run eslint",
+		"precheck:types": "npm run generate-types",
+		"check:types": "tsgo -b",
+		"predeploy": "npm run build",
+		"deploy": "wrangler deploy",
+		"dev": "concurrently \"npm:dev:*\"",
+		"predev:raycast": "npm run build",
+		"dev:raycast": "ray develop",
+		"predev:web": "npm run build",
+		"dev:web": "vite",
+		"preeslint": "npm run generate-types",
+		"eslint": "eslint . --cache",
+		"fix": "concurrently \"npm:fix:*\" --group",
+		"fix:format": "npm run prettier -- --write",
+		"fix:lint": "npm run eslint -- --fix",
+		"generate-types": "wrangler types",
+		"prettier": "prettier . --cache",
+		"prepreview": "npm run build",
+		"preview": "wrangler dev",
+		"test": "npm run vitest",
+		"test:ci": "npm run vitest -- run --browser.headless",
+		"previtest": "npm run build",
+		"vitest": "vitest"
+	},
+	"prettier": {
+		"plugins": [
+			"prettier-plugin-packagejson",
+			"@trivago/prettier-plugin-sort-imports",
+			"prettier-plugin-tailwindcss"
+		]
+	},
+	"overrides": {
+		"@vitejs/plugin-rsc": "0.5.11"
+	},
+	"dependencies": {
+		"@effect/cli": "0.73.0",
+		"@effect/platform-node": "0.104.0",
+		"@fontsource-variable/inter": "5.2.8",
+		"@headlessui/react": "2.2.9",
+		"@heroicons/react": "2.2.0",
+		"@raycast/api": "1.104.1",
+		"@raycast/utils": "2.2.2",
+		"clsx": "2.1.1",
+		"effect": "3.19.14",
+		"react": "19.2.3",
+		"react-dom": "19.2.3",
+		"rsc-html-stream": "0.0.7",
+		"server-only": "0.0.1"
+	},
+	"devDependencies": {
+		"@cloudflare/vite-plugin": "1.20.1",
+		"@cloudflare/vitest-pool-workers": "https://pkg.pr.new/@cloudflare/vitest-pool-workers@11632",
+		"@effect/printer-ansi": "0.47.0",
+		"@eslint/compat": "2.0.1",
+		"@eslint/js": "9.39.2",
+		"@raycast/eslint-plugin": "2.1.1",
+		"@tailwindcss/vite": "4.1.18",
+		"@trivago/prettier-plugin-sort-imports": "6.0.2",
+		"@types/eslint-plugin-jsx-a11y": "6.10.1",
+		"@types/ignore-walk": "4.0.3",
+		"@types/micromatch": "4.0.10",
+		"@types/node": "25.0.6",
+		"@types/react": "19.2.8",
+		"@types/react-dom": "19.2.3",
+		"@typescript/native-preview": "7.0.0-dev.20260111.1",
+		"@vitejs/plugin-react": "5.1.2",
+		"@vitejs/plugin-rsc": "0.5.11",
+		"@vitest/browser-playwright": "4.0.16",
+		"ansi-escapes": "7.2.0",
+		"babel-plugin-react-compiler": "1.0.0",
+		"concurrently": "9.2.1",
+		"eslint": "9.39.2",
+		"eslint-plugin-jsx-a11y": "6.10.2",
+		"eslint-plugin-react": "7.37.5",
+		"eslint-plugin-react-compiler": "19.1.0-rc.2",
+		"eslint-plugin-react-hooks": "7.0.1",
+		"ignore-walk": "8.0.0",
+		"micromatch": "4.0.8",
+		"playwright": "1.57.0",
+		"prettier": "3.7.4",
+		"prettier-plugin-packagejson": "2.5.20",
+		"prettier-plugin-tailwindcss": "0.7.2",
+		"tailwindcss": "4.1.18",
+		"typescript": "5.9.3",
+		"typescript-eslint": "8.52.0",
+		"vite": "npm:rolldown-vite@7.3.1",
+		"vitest": "4.0.16",
+		"vitest-plugin-rsc": "0.0.0-experimental-64e35ee-20250807",
+		"wrangler": "4.58.0"
+	},
+	"engines": {
+		"node": "24.12.0"
+	},
+	"icon": "favicon.png",
+	"aiaio": {
+		"version": ""
+	},
+	"commands": [
+		{
+			"name": "aiaio",
+			"title": "AIAIO",
+			"subtitle": "Build something great.",
+			"description": "The Raycast command description.",
+			"mode": "view"
+		}
+	],
+	"platforms": [
+		"macOS",
+		"Windows"
+	],
+	"title": "AIAIO"
+}

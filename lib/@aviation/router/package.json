@@ -1,0 +1,25 @@
+{
+	"name": "@aviation/router",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"exports": {
+		"./urlPattern": "./dist/urlPattern.js"
+	},
+	"files": [
+		"./dist/",
+		"./src/"
+	],
+	"scripts": {
+		"build": "npx tsgo"
+	},
+	"dependencies": {
+		"@aviation/context": "*"
+	},
+	"devDependencies": {
+		"@typescript/native-preview": "7.0.0-dev.20260111.1",
+		"react": "19.2.3",
+		"react-dom": "19.2.3",
+		"typescript": "5.9.3"
+	}
+}
