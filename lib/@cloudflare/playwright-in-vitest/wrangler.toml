@@ -1,0 +1,4 @@
+name = "cloudflare-playwright-in-vitest"
+main = "./src/index.ts"
+compatibility_date = "2026-01-19"
+compatibility_flags = ["nodejs_compat"]

@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"jsx": "react-jsx",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"types": ["vite/client", "@vitejs/plugin-rsc/types"]
+	},
+	"exclude": ["./**/*.test.*", "./**/*.spec.*"],
+	"extends": "../tsconfig.common.json",
+	"include": ["../worker-configuration.d.ts", "./**/*"]
+}

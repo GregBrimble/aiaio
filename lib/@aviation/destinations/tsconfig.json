@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"declaration": true,
+		"declarationMap": true,
+		"jsx": "react-jsx",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
+		"module": "NodeNext",
+		"noEmit": false,
+		"outDir": "dist",
+		"rootDir": "./src/",
+		"sourceMap": true,
+		"types": ["vite/client", "@vitejs/plugin-rsc/types"]
+	},
+	"exclude": ["./**/*.test.*", "./**/*.spec.*"],
+	"extends": "../../../tsconfig.common.json",
+	"include": ["./src/**/*"]
+}
