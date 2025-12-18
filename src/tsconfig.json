@@ -1,0 +1,7 @@
+{
+	"compilerOptions": {
+		"jsx": "react-jsx"
+	},
+	"extends": "../tsconfig.common.json",
+	"include": ["../raycast-env.d.ts", "./**/*"]
+}
