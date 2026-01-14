@@ -42,6 +42,7 @@
 		"preview": "wrangler dev",
 		"test": "npm run vitest",
 		"test:ci": "npm run vitest -- run --browser.headless",
+		"test:coverage": "npm run vitest -- run --coverage",
 		"previtest": "npm run build",
 		"vitest": "vitest"
 	},
@@ -89,6 +90,7 @@
 		"@vitejs/plugin-react": "5.1.2",
 		"@vitejs/plugin-rsc": "0.5.11",
 		"@vitest/browser-playwright": "4.0.16",
+		"@vitest/coverage-v8": "4.0.16",
 		"ansi-escapes": "7.2.0",
 		"babel-plugin-react-compiler": "1.0.0",
 		"concurrently": "9.2.1",
